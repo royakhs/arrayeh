@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="40dp"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_background"
+        android:lines="1"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:theme="@style/TextViewStyle"
+        android:textStyle="bold" />
+</FrameLayout>

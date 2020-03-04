@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:title="خانه"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"/>
+    <item android:id="@+id/community"
+        android:title="انجمن"
+        android:icon="@drawable/ic_community"
+        app:showAsAction="always"/>
+    <item android:id="@+id/advice"
+        android:title="مشاوره"
+        android:icon="@drawable/ic_advice"
+        app:showAsAction="always"/>
+    <item android:id="@+id/more"
+        android:title="بیشتر"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always"/>
+
+</menu>

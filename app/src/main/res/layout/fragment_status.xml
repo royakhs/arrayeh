@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".StatusFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBaseBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="انتخاب وضعیت"
+                android:textColor="@color/colorWhite" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_back"
+                android:tint="@color/colorWhite" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="وضعیت خود را مشخص کنید! "
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <me.omidh.liquidradiobutton.LiquidRadioButton
+                        android:id="@+id/radioPregnancy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="باردار"
+                        android:textSize="18dp"
+                        app:lrb_checkedColor="@android:color/holo_green_dark"
+                        app:lrb_explodeCount="3"
+                        app:lrb_inAnimDuration="500"
+                        app:lrb_innerCircleRadius="15dp"
+                        app:lrb_outAnimDuration="500"
+                        app:lrb_outterPadding="8dp"
+                        app:lrb_strokeRadius="15dp"
+                        app:lrb_strokeWidth="1dp"
+                        app:lrb_unCheckedColor="@android:color/holo_red_light" />
+
+                    <me.omidh.liquidradiobutton.LiquidRadioButton
+                        android:id="@+id/radioHavingBaby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="دارای فرزند"
+                        android:textSize="18dp"
+                        app:lrb_checkedColor="@android:color/holo_green_dark"
+                        app:lrb_explodeCount="3"
+                        app:lrb_inAnimDuration="500"
+                        app:lrb_innerCircleRadius="15dp"
+                        app:lrb_outAnimDuration="500"
+                        app:lrb_outterPadding="8dp"
+                        app:lrb_strokeRadius="15dp"
+                        app:lrb_strokeWidth="1dp"
+                        app:lrb_unCheckedColor="@android:color/holo_red_light" />
+                </RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
