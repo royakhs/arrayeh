@@ -3,17 +3,17 @@ package com.arayeh.hampa;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
+import com.arayeh.hampa.fragments.BabyContextFragment;
+import com.arayeh.hampa.fragments.BabyStatusFragment;
+import com.arayeh.hampa.fragments.CommunityFragment;
+import com.arayeh.hampa.fragments.ProfileFragment;
+import com.arayeh.hampa.fragments.ShowNewsDetailFragment;
+import com.arayeh.hampa.models.ContentItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 

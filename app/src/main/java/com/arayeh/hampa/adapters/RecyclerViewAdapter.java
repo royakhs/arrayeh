@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,9 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.arayeh.hampa.models.ContextItem;
+import com.arayeh.hampa.R;
 
 import java.util.List;
 

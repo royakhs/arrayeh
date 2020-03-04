@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.arayeh.hampa.R;
 
 
 public class BabyStatusFragment extends DialogFragment {

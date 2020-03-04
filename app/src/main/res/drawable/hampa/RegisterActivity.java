@@ -17,6 +17,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.arayeh.hampa.Interfaces.OnClick;
+import com.arayeh.hampa.adapters.ViewPagerAdapter;
 import com.arayeh.hampa.fragments.RegisterFragmentOne;
 import com.arayeh.hampa.fragments.RegisterFragmentTwo;
 import com.arayeh.hampa.models.LoginData;

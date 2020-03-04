@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.adapters;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

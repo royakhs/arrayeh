@@ -1,7 +1,9 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import com.arayeh.hampa.models.ContentItem;
 
 public class MessageItem implements Parcelable {
     private String header;

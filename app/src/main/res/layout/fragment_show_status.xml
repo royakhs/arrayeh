@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     android:layoutDirection="rtl"
     android:orientation="vertical"
-    tools:context=".ShowStatusFragment">
+    tools:context=".fragments.ShowStatusFragment">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

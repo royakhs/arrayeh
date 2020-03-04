@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.arayeh.hampa.models.ContentItem;
+import com.arayeh.hampa.R;
 
 
 public class ShowNewsDetailFragment extends Fragment {

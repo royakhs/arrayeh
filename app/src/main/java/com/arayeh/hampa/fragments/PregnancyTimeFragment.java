@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,17 +13,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.NumberPicker;
 
-import com.google.android.material.bottomappbar.BottomAppBar;
+import com.arayeh.hampa.MainActivity;
+import com.arayeh.hampa.R;
+
+import java.text.DateFormatSymbols;
 
 
-public class LastPeriodTimeFragment extends Fragment {
-private AppCompatButton btnOk;
+public class PregnancyTimeFragment extends Fragment {
+private AppCompatButton btnOK;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_last_period_time, container, false);
-        btnOk=view.findViewById(R.id.btnOK);
+        View view= inflater.inflate(R.layout.fragment_pregnancy_time, container, false);
+        btnOK=view.findViewById(R.id.btnOK);
         NumberPicker yearPicker = view.findViewById(R.id.yearPicker);
         NumberPicker monthPicker = view.findViewById(R.id.monthPicker);
         NumberPicker dayPicker = view.findViewById(R.id.dayPicker);
@@ -36,13 +40,13 @@ private AppCompatButton btnOk;
         monthPicker.setDisplayedValues(month3char);
         dayPicker.setMaxValue(day3char.length - 1); // important
         dayPicker.setDisplayedValues(day3char);
-        btnOk.setOnClickListener(new View.OnClickListener() {
+        btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Activity activity = getActivity();
                 if(activity instanceof MainActivity){
                     MainActivity myactivity = (MainActivity) activity;
-                    myactivity.loadBabyGenderFragment();
+                    myactivity.loadLastPeriodTimeFragment();
                 }
             }
         });
@@ -51,9 +55,9 @@ private AppCompatButton btnOk;
     }
     private String[] get3CharYears() {
         String[] years = new String[2];
-        for (int i=0; i<years.length;i++){
-            years[i]=String.valueOf(i+1398);
-        }
+       for (int i=0; i<years.length;i++){
+           years[i]=String.valueOf(i+1398);
+       }
         return years;
     }
     private String[] get3CharMonth() {

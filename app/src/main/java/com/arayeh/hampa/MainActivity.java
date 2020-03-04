@@ -6,6 +6,15 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.arayeh.hampa.fragments.BabyGenderFragment;
+import com.arayeh.hampa.fragments.LastPeriodTimeFragment;
+import com.arayeh.hampa.fragments.LoginFragment;
+import com.arayeh.hampa.fragments.PregnancyTimeFragment;
+import com.arayeh.hampa.fragments.SelectedNameFragment;
+import com.arayeh.hampa.fragments.ShowStatusFragment;
+import com.arayeh.hampa.fragments.StartFragment;
+import com.arayeh.hampa.fragments.StatusFragment;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

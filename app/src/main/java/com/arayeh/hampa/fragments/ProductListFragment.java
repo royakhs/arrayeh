@@ -1,7 +1,5 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,11 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.arayeh.hampa.models.ContentItem;
+import com.arayeh.hampa.R;
+import com.arayeh.hampa.interfaces.SelectItemClick;
+import com.arayeh.hampa.adapters.NewsViewAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ProductListFragment extends Fragment implements SelectItemClick{
+public class ProductListFragment extends Fragment implements SelectItemClick {
     private RecyclerView firstRecyclerView;
     private RecyclerView.Adapter mAdapter;
     @Override

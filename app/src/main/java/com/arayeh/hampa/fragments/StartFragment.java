@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.arayeh.hampa.MainActivity;
+import com.arayeh.hampa.R;
 
 
 public class StartFragment extends Fragment {

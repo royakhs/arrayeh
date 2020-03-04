@@ -1,8 +1,7 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.widget.ImageView;
 
 public class ContentItem implements Parcelable {
     private int newsIcon;

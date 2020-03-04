@@ -1,4 +1,4 @@
-package com.arayeh.hampa;
+package com.arayeh.hampa.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.arayeh.hampa.models.ContentItem;
+import com.arayeh.hampa.R;
+import com.arayeh.hampa.interfaces.SelectItemClick;
 
 import java.util.List;
 
